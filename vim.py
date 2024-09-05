@@ -49,7 +49,8 @@ Welcome to Vim Practice!
 
 9. Registers
    - Copy to register: "{register}y
-   - Paste from register: "{register}p
+   - Paste from register: "I just changed this ;p"
+   - Delete to register: "I just deleted this ;p"
    - View registers: :reg
 
 10. Undo and Redo
@@ -98,4 +99,40 @@ Additional Practice Problems:
 Remember to use Vim commands to practice these tasks!
 
 Happy Vim-ing!
+"""
+"""
+13. Debugging in Vim
+    - Using built-in debugger: ':help debug-vim'
+    - Integrating with external debuggers (e.g., gdb, pdb)
+    - Setting breakpoints: ':breakadd', ':breakdel'
+    - Stepping through code: ':next', ':finish'
+    - Inspecting variables: ':echo', ':let'
+
+14. Working with Large Codebases
+    - Efficient navigation:
+      - Using tags: ctags integration, ':tag', 'Ctrl-]'
+      - Fuzzy finding: plugins like 'CtrlP' or 'fzf.vim'
+    - Code folding: 'za', 'zo', 'zc', 'zR', 'zM'
+    - Global search and replace: ':vimgrep', ':cfdo'
+    - Project-wide refactoring: plugins like 'vim-refactor'
+
+15. Advanced Vim Features for Large Projects
+    - Buffer management: ':ls', ':b', ':bd'
+    - Window splits and tabs: ':sp', ':vsp', ':tabnew'
+    - Session management: ':mksession', ':source'
+    - Autocommands for project-specific settings
+
+Practice Tasks for Large Codebases:
+1. [ ] Generate and navigate tags in a multi-file project
+2. [ ] Set up a fuzzy finder and practice quick file navigation
+3. [ ] Use global search to find all occurrences of a function across files
+4. [ ] Refactor a function name across multiple files
+5. [ ] Create a custom mapping for switching between related files (e.g., '.h' and '.cpp')
+6. [ ] Set up and use persistent undo across sessions
+7. [ ] Create a project-specific vimrc using autocommands
+8. [ ] Practice using marks to navigate between files
+9. [ ] Set up and use 'vim-fugitive' for Git integration in large projects
+10. [ ] Customize statusline to show useful project information
+
+Remember to explore plugins and tools that enhance Vim's capabilities for managing and navigating large codebases!
 """
